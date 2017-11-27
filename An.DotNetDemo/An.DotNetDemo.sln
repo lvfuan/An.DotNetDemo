@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MongoDB", "MongoDB", "{1F2BC5D7-C78D-4F79-962F-665F5FB44F35}"
 EndProject
@@ -18,6 +18,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{D1A534FC-8E00-45D8-95A9-D52C45737101}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestConsole", "UnitTestConsole\UnitTestConsole.csproj", "{4C5F4123-F0D2-4A2C-A2BB-F4E8A182579C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriteErrorLogSendEmail", "WriteErrorLogSendEmail\WriteErrorLogSendEmail.csproj", "{95E0131C-878E-4302-9BBF-CDAC10CE803E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetEmailHelper", "NetEmailHelper\NetEmailHelper.csproj", "{DD1C4087-A87D-4AAA-BB06-F2EEF9B3D615}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +45,14 @@ Global
 		{4C5F4123-F0D2-4A2C-A2BB-F4E8A182579C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C5F4123-F0D2-4A2C-A2BB-F4E8A182579C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C5F4123-F0D2-4A2C-A2BB-F4E8A182579C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95E0131C-878E-4302-9BBF-CDAC10CE803E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95E0131C-878E-4302-9BBF-CDAC10CE803E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95E0131C-878E-4302-9BBF-CDAC10CE803E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95E0131C-878E-4302-9BBF-CDAC10CE803E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD1C4087-A87D-4AAA-BB06-F2EEF9B3D615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD1C4087-A87D-4AAA-BB06-F2EEF9B3D615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD1C4087-A87D-4AAA-BB06-F2EEF9B3D615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD1C4087-A87D-4AAA-BB06-F2EEF9B3D615}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +62,8 @@ Global
 		{4252A9B3-61AD-48A7-8123-BBCA3BE97A7E} = {1E60C68D-228F-4E71-A03F-A72A4C0454AE}
 		{E2F7FA25-15E7-4A11-B415-984D0543B762} = {72C95281-4C43-41CE-B6C6-08642DD1590C}
 		{4C5F4123-F0D2-4A2C-A2BB-F4E8A182579C} = {D1A534FC-8E00-45D8-95A9-D52C45737101}
+		{95E0131C-878E-4302-9BBF-CDAC10CE803E} = {72C95281-4C43-41CE-B6C6-08642DD1590C}
+		{DD1C4087-A87D-4AAA-BB06-F2EEF9B3D615} = {72C95281-4C43-41CE-B6C6-08642DD1590C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AC82C12A-CCCE-4DC8-91BD-F93295012271}

@@ -8,6 +8,5 @@ F:\An.DotNetDemo\An.DotNetDemo\MongoDB.Helper\bin\Debug\MongoDB.Bson.xml
 F:\An.DotNetDemo\An.DotNetDemo\MongoDB.Helper\bin\Debug\MongoDB.Driver.xml
 F:\An.DotNetDemo\An.DotNetDemo\MongoDB.Helper\bin\Debug\MongoDB.Driver.Core.xml
 F:\An.DotNetDemo\An.DotNetDemo\MongoDB.Helper\obj\Debug\MongoDB.Helper.csprojResolveAssemblyReference.cache
-F:\An.DotNetDemo\An.DotNetDemo\MongoDB.Helper\obj\Debug\MongoDB.Helper.csproj.CoreCompileInputs.cache
 F:\An.DotNetDemo\An.DotNetDemo\MongoDB.Helper\obj\Debug\MongoDB.Helper.dll
 F:\An.DotNetDemo\An.DotNetDemo\MongoDB.Helper\obj\Debug\MongoDB.Helper.pdb

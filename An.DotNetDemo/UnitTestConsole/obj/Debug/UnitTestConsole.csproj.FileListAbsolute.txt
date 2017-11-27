@@ -4,6 +4,11 @@ F:\An.DotNetDemo\An.DotNetDemo\UnitTestConsole\bin\Debug\UnitTestConsole.pdb
 F:\An.DotNetDemo\An.DotNetDemo\UnitTestConsole\bin\Debug\An.Common.dll
 F:\An.DotNetDemo\An.DotNetDemo\UnitTestConsole\bin\Debug\An.Common.pdb
 F:\An.DotNetDemo\An.DotNetDemo\UnitTestConsole\obj\Debug\UnitTestConsole.csprojResolveAssemblyReference.cache
-F:\An.DotNetDemo\An.DotNetDemo\UnitTestConsole\obj\Debug\UnitTestConsole.csproj.CoreCompileInputs.cache
 F:\An.DotNetDemo\An.DotNetDemo\UnitTestConsole\obj\Debug\UnitTestConsole.exe
 F:\An.DotNetDemo\An.DotNetDemo\UnitTestConsole\obj\Debug\UnitTestConsole.pdb
+F:\An.DotNetDemo\An.DotNetDemo\UnitTestConsole\bin\Debug\WriteErrorLogSendEmail.dll
+F:\An.DotNetDemo\An.DotNetDemo\UnitTestConsole\bin\Debug\log4net.dll
+F:\An.DotNetDemo\An.DotNetDemo\UnitTestConsole\bin\Debug\WriteErrorLogSendEmail.pdb
+F:\An.DotNetDemo\An.DotNetDemo\UnitTestConsole\bin\Debug\log4net.xml
+F:\An.DotNetDemo\An.DotNetDemo\UnitTestConsole\bin\Debug\NetEmailHelper.dll
+F:\An.DotNetDemo\An.DotNetDemo\UnitTestConsole\bin\Debug\NetEmailHelper.pdb

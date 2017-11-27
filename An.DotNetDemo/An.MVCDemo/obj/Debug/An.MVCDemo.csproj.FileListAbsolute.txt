@@ -71,6 +71,11 @@ F:\An.DotNetDemo\An.DotNetDemo\An.MVCDemo\bin\zh-Hans\System.Web.Webpages.Razor.
 F:\An.DotNetDemo\An.DotNetDemo\An.MVCDemo\bin\zh-Hans\System.Web.Helpers.resources.dll
 F:\An.DotNetDemo\An.DotNetDemo\An.MVCDemo\bin\zh-Hans\System.Web.Mvc.resources.dll
 F:\An.DotNetDemo\An.DotNetDemo\An.MVCDemo\obj\Debug\An.MVCDemo.csprojResolveAssemblyReference.cache
-F:\An.DotNetDemo\An.DotNetDemo\An.MVCDemo\obj\Debug\An.MVCDemo.csproj.CoreCompileInputs.cache
 F:\An.DotNetDemo\An.DotNetDemo\An.MVCDemo\obj\Debug\An.MVCDemo.dll
 F:\An.DotNetDemo\An.DotNetDemo\An.MVCDemo\obj\Debug\An.MVCDemo.pdb
+F:\An.DotNetDemo\An.DotNetDemo\An.MVCDemo\bin\An.Common.dll
+F:\An.DotNetDemo\An.DotNetDemo\An.MVCDemo\bin\An.Common.pdb
+F:\An.DotNetDemo\An.DotNetDemo\An.MVCDemo\bin\WriteErrorLogSendEmail.dll
+F:\An.DotNetDemo\An.DotNetDemo\An.MVCDemo\bin\log4net.dll
+F:\An.DotNetDemo\An.DotNetDemo\An.MVCDemo\bin\WriteErrorLogSendEmail.pdb
+F:\An.DotNetDemo\An.DotNetDemo\An.MVCDemo\bin\log4net.xml

@@ -32,6 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -49,11 +53,20 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="CustomerConfig.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\An.Common\An.Common.csproj">
       <Project>{e2f7fa25-15e7-4a11-b415-984d0543b762}</Project>
       <Name>An.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetEmailHelper\NetEmailHelper.csproj">
+      <Project>{dd1c4087-a87d-4aaa-bb06-f2eef9b3d615}</Project>
+      <Name>NetEmailHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WriteErrorLogSendEmail\WriteErrorLogSendEmail.csproj">
+      <Project>{95e0131c-878e-4302-9bbf-cdac10ce803e}</Project>
+      <Name>WriteErrorLogSendEmail</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,5 +1,4 @@
 F:\An.DotNetDemo\An.DotNetDemo\An.Common\bin\Debug\An.Common.dll
 F:\An.DotNetDemo\An.DotNetDemo\An.Common\bin\Debug\An.Common.pdb
-F:\An.DotNetDemo\An.DotNetDemo\An.Common\obj\Debug\An.Common.csproj.CoreCompileInputs.cache
 F:\An.DotNetDemo\An.DotNetDemo\An.Common\obj\Debug\An.Common.dll
 F:\An.DotNetDemo\An.DotNetDemo\An.Common\obj\Debug\An.Common.pdb

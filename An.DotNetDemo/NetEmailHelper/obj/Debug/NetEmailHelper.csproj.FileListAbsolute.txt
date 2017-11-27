@@ -1,0 +1,4 @@
+F:\An.DotNetDemo\An.DotNetDemo\NetEmailHelper\bin\Debug\NetEmailHelper.dll
+F:\An.DotNetDemo\An.DotNetDemo\NetEmailHelper\bin\Debug\NetEmailHelper.pdb
+F:\An.DotNetDemo\An.DotNetDemo\NetEmailHelper\obj\Debug\NetEmailHelper.dll
+F:\An.DotNetDemo\An.DotNetDemo\NetEmailHelper\obj\Debug\NetEmailHelper.pdb

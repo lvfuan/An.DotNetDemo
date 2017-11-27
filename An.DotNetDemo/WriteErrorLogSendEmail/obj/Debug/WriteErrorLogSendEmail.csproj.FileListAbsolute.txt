@@ -1,0 +1,7 @@
+F:\An.DotNetDemo\An.DotNetDemo\WriteErrorLogSendEmail\bin\Debug\WriteErrorLogSendEmail.dll
+F:\An.DotNetDemo\An.DotNetDemo\WriteErrorLogSendEmail\bin\Debug\WriteErrorLogSendEmail.pdb
+F:\An.DotNetDemo\An.DotNetDemo\WriteErrorLogSendEmail\bin\Debug\log4net.dll
+F:\An.DotNetDemo\An.DotNetDemo\WriteErrorLogSendEmail\bin\Debug\log4net.xml
+F:\An.DotNetDemo\An.DotNetDemo\WriteErrorLogSendEmail\obj\Debug\WriteErrorLogSendEmail.csprojResolveAssemblyReference.cache
+F:\An.DotNetDemo\An.DotNetDemo\WriteErrorLogSendEmail\obj\Debug\WriteErrorLogSendEmail.dll
+F:\An.DotNetDemo\An.DotNetDemo\WriteErrorLogSendEmail\obj\Debug\WriteErrorLogSendEmail.pdb
