@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B16263E2-E084-42A8-9423-85B2133F7C48}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TimeTests</RootNamespace>
+    <AssemblyName>TimeTests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DB\Context.cs" />
+    <Compile Include="DB\QuoteExpressionPO.cs" />
+    <Compile Include="DB\UserDataVO.cs" />
+    <Compile Include="MapingTests.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Farseer.Net.Utils\Src\Farseer.Net.Utils.Web\Farseer.Net.Utils.Web.csproj">
+      <Project>{9fbaa409-251a-428c-b222-f7426d19c244}</Project>
+      <Name>Farseer.Net.Utils.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Farseer.Net.Utils\Src\Farseer.Net.Utils\Farseer.Net.Utils.csproj">
+      <Project>{f82573c6-360b-4795-aeb2-c57d947857d1}</Project>
+      <Name>Farseer.Net.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Farseer.Net\Src\Farseer.Net.csproj">
+      <Project>{f6345d1b-c5dc-464c-a417-c02d7cd37e52}</Project>
+      <Name>Farseer.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Src\Farseer.Net.Sql.csproj">
+      <Project>{0484262d-0afc-4ab6-baaf-e944778ff30e}</Project>
+      <Name>Farseer.Net.Sql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Farseer.Net.Sql.Tests\Farseer.Net.Sql.Tests.csproj">
+      <Project>{A1F0E815-EC3D-47E1-B129-95187E9E8960}</Project>
+      <Name>Farseer.Net.Sql.Tests</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99D6F4E7-980B-4115-AE5A-DA0C17129780}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FS.Redis</RootNamespace>
+    <AssemblyName>Farseer.Net.Redis</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\eumAggregateType.cs" />
+    <Compile Include="Data\eumSetType.cs" />
+    <Compile Include="Data\ChannelCount.cs" />
+    <Compile Include="Data\ScoreValue.cs" />
+    <Compile Include="Infrastructure\IRedisQueueCompletableOperation.cs" />
+    <Compile Include="Data\KeyValue.cs" />
+    <Compile Include="Infrastructure\Pipeline\IRedisPipelineShared.cs" />
+    <Compile Include="Internal\BufferManger.cs" />
+    <Compile Include="RedisNumber.cs" />
+    <Compile Include="RedisConnection.cs" />
+    <Compile Include="RedisHash.cs" />
+    <Compile Include="RedisExpire.cs" />
+    <Compile Include="RedisSort.cs" />
+    <Compile Include="RedisKey.cs" />
+    <Compile Include="RedisContext.cs" />
+    <Compile Include="Internal\BufferPool.cs" />
+    <Compile Include="Internal\Commands.cs" />
+    <Compile Include="Internal\Connection.cs" />
+    <Compile Include="Internal\DefaultConfig.cs" />
+    <Compile Include="Internal\InternalContext.cs" />
+    <Compile Include="Internal\RedisClient.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedisList.cs" />
+    <Compile Include="RedisPubSub.cs" />
+    <Compile Include="RedisScript.cs" />
+    <Compile Include="RedisServer.cs" />
+    <Compile Include="RedisSet.cs" />
+    <Compile Include="RedisSortedSet.cs" />
+    <Compile Include="RedisBit.cs" />
+    <Compile Include="RedisString.cs" />
+    <Compile Include="Internal\RedisSubscribe.cs" />
+    <Compile Include="RedisTransaction.cs" />
+    <Compile Include="_\FS.Configs\RedisConfigs.cs" />
+    <Compile Include="_\FS.Extends\StringExtends.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="_\FS.Cache\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\FarseerNet\Src\Farseer.Net.csproj">
+      <Project>{f6345d1b-c5dc-464c-a417-c02d7cd37e52}</Project>
+      <Name>Farseer.Net</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if Exist $(ProjectDir)bin\Release\$(ProjectName).dll copy /V $(ProjectDir)bin\Release\$(ProjectName).dll  $(ProjectDir)..\lib\$(ProjectName).dll
+if Exist $(ProjectDir)bin\Release\$(ProjectName).pdb copy /V $(ProjectDir)bin\Release\$(ProjectName).pdb  $(ProjectDir)..\lib\$(ProjectName).pdb</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

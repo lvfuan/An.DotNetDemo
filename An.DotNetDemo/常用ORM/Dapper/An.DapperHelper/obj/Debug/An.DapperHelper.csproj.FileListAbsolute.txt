@@ -1,0 +1,5 @@
+F:\An.DotNetDemo\An.DotNetDemo\常用ORM\Dapper\An.DapperHelper\obj\Debug\An.DapperHelper.csprojResolveAssemblyReference.cache
+F:\An.DotNetDemo\An.DotNetDemo\常用ORM\Dapper\An.DapperHelper\bin\Debug\An.DapperHelper.dll
+F:\An.DotNetDemo\An.DotNetDemo\常用ORM\Dapper\An.DapperHelper\bin\Debug\An.DapperHelper.pdb
+F:\An.DotNetDemo\An.DotNetDemo\常用ORM\Dapper\An.DapperHelper\obj\Debug\An.DapperHelper.dll
+F:\An.DotNetDemo\An.DotNetDemo\常用ORM\Dapper\An.DapperHelper\obj\Debug\An.DapperHelper.pdb

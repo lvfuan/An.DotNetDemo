@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F82573C6-360B-4795-AEB2-C57D947857D1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FS.Utils</RootNamespace>
+    <AssemblyName>Farseer.Net.Utils</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Consoles.cs" />
+    <Compile Include="Common\WinServer.cs" />
+    <Compile Include="Component\WinService\BaseTimingService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\WinService\BaseService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\SpeedTest.cs" />
+    <Compile Include="Common\Compress.cs" />
+    <Compile Include="Component\Chinese.cs" />
+    <Compile Include="Common\DynamicOperate.cs" />
+    <Compile Include="Common\Files.cs" />
+    <Compile Include="Common\InfoComparer.cs" />
+    <Compile Include="Component\Cmd.cs" />
+    <Compile Include="Component\IpAdress.cs" />
+    <Compile Include="Common\IsType.cs" />
+    <Compile Include="Common\Net.cs" />
+    <Compile Include="Component\Maths.cs" />
+    <Compile Include="Component\ParallelGroup.cs" />
+    <Compile Include="Component\QueueTask.cs" />
+    <Compile Include="Common\Rand.cs" />
+    <Compile Include="Component\Reverser.cs" />
+    <Compile Include="Component\RMB.cs" />
+    <Compile Include="Common\Serialized.cs" />
+    <Compile Include="Common\Str.cs" />
+    <Compile Include="Component\StrPlus.cs" />
+    <Compile Include="Common\Url.cs" />
+    <Compile Include="Component\AdministrativeCode.cs" />
+    <Compile Include="Component\ApplyCheck.cs" />
+    <Compile Include="Common\Assembly.cs" />
+    <Compile Include="Common\Encrypt.cs" />
+    <Compile Include="Common\Mac.cs" />
+    <Compile Include="Component\ConsoleMsg.cs" />
+    <Compile Include="Common\Pro.cs" />
+    <Compile Include="Component\SpeedTestMultiple.cs" />
+    <Compile Include="Common\Thumbnail.cs" />
+    <Compile Include="Component\TimingTasks.cs" />
+    <Compile Include="Component\WinSocket\ClientSocket.cs" />
+    <Compile Include="Component\WinSocket\ServerSocket.cs" />
+    <Compile Include="Component\WinSocket\StateObject.cs" />
+    <Compile Include="_\FS.Extends\ConcurrentBagExtend.cs" />
+    <Compile Include="_\FS.Extends\ArrayExtend.cs" />
+    <Compile Include="_\FS.Extends\BoolExtend.cs" />
+    <Compile Include="_\FS.Extends\DataTableExtend.cs" />
+    <Compile Include="_\FS.Extends\DateTimeExtend.cs" />
+    <Compile Include="_\FS.Extends\DictionaryExtend.cs" />
+    <Compile Include="_\FS.Extends\EntityExtend.cs" />
+    <Compile Include="_\FS.Extends\EnumExtend.cs" />
+    <Compile Include="_\FS.Extends\ExpressionExtend.cs" />
+    <Compile Include="_\FS.Extends\FuncExtend.cs" />
+    <Compile Include="_\FS.Extends\IEnumerableUtilsExtend.cs" />
+    <Compile Include="_\FS.Extends\IEnumeratorExtend.cs" />
+    <Compile Include="_\FS.Extends\IListExtend.cs" />
+    <Compile Include="_\FS.Extends\IOrderedQueryableExtend.cs" />
+    <Compile Include="_\FS.Extends\IQueryableExtend.cs" />
+    <Compile Include="_\FS.Extends\NumberExtend.cs" />
+    <Compile Include="_\FS.Extends\StringExtend.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\FarseerNet\Src\Farseer.Net.csproj">
+      <Project>{f6345d1b-c5dc-464c-a417-c02d7cd37e52}</Project>
+      <Name>Farseer.Net</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if Exist $(ProjectDir)bin\Release\$(ProjectName).dll copy /V $(ProjectDir)bin\Release\$(ProjectName).dll  $(ProjectDir)..\..\lib\$(ProjectName).dll
+if Exist $(ProjectDir)bin\Release\$(ProjectName).pdb copy /V $(ProjectDir)bin\Release\$(ProjectName).pdb  $(ProjectDir)..\..\lib\$(ProjectName).pdb</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

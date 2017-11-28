@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9FBAA409-251A-428C-B222-F7426D19C244}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FS.Utils</RootNamespace>
+    <AssemblyName>Farseer.Net.Utils.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;IsWeb</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;IsMvc,IsWeb</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Cookies.cs" />
+    <Compile Include="Common\Excel.cs" />
+    <Compile Include="Common\Htmls.cs" />
+    <Compile Include="Common\Images.cs" />
+    <Compile Include="Common\PageSplit.cs" />
+    <Compile Include="Common\Req.cs" />
+    <Compile Include="Common\ResponseFile.cs" />
+    <Compile Include="Common\Sessions.cs" />
+    <Compile Include="Common\UpLoadFile.cs" />
+    <Compile Include="Common\Web.cs" />
+    <Compile Include="Common\WebCache.cs" />
+    <Compile Include="Component\HttpClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\JavaScript.cs" />
+    <Compile Include="Component\LhgDialog.cs" />
+    <Compile Include="Component\Open\IOpenAuth.cs" />
+    <Compile Include="Component\Open\QQWebOpen.cs" />
+    <Compile Include="Component\Open\SinaWebOpen.cs" />
+    <Compile Include="Component\Open\WXWebOpen.cs" />
+    <Compile Include="Component\Routing\DomainData.cs" />
+    <Compile Include="Component\Routing\DomainRoute.cs" />
+    <Compile Include="Component\Routing\LinkExtensions.cs" />
+    <Compile Include="Component\Terminator.cs" />
+    <Compile Include="Component\VeriCode.cs" />
+    <Compile Include="FS.Extends\EnumMvcExtend.cs" />
+    <Compile Include="HttpModule\CDN.cs" />
+    <Compile Include="HttpModule\IPSecurity.cs" />
+    <Compile Include="HttpModule\UrlJump.cs" />
+    <Compile Include="HttpModule\UrlRewriter.cs" />
+    <Compile Include="Page\BaseController.cs" />
+    <Compile Include="Page\BaseControls.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\BaseHandler.cs" />
+    <Compile Include="Page\BaseMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Repeater.cs" />
+    <Compile Include="_\FS.Configs\WebGeneralConfigs.cs" />
+    <Compile Include="_\FS.Configs\WebIPSecurityConfigs.cs" />
+    <Compile Include="_\FS.Configs\WebSystemConfigs.cs" />
+    <Compile Include="_\FS.Configs\WebUrlJumpConfigs.cs" />
+    <Compile Include="_\FS.Configs\WebUrlRewriterConfigs.cs" />
+    <Compile Include="_\FS.Extends\CheckBoxListExtend.cs" />
+    <Compile Include="_\FS.Extends\DropDownList.cs" />
+    <Compile Include="_\FS.Extends\EntityWebExtend.cs" />
+    <Compile Include="_\FS.Extends\IEnumerableWebExtend.cs" />
+    <Compile Include="_\FS.Extends\RepeaterExtend.cs" />
+    <Compile Include="_\FS.Extends\SetExtend.cs" />
+    <Compile Include="_\FS.Extends\TypeExtend.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\FarseerNet\Src\Farseer.Net.csproj">
+      <Project>{f6345d1b-c5dc-464c-a417-c02d7cd37e52}</Project>
+      <Name>Farseer.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Farseer.Net.Utils\Farseer.Net.Utils.csproj">
+      <Project>{f82573c6-360b-4795-aeb2-c57d947857d1}</Project>
+      <Name>Farseer.Net.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if Exist $(ProjectDir)bin\Release\$(ProjectName).dll copy /V $(ProjectDir)bin\Release\$(ProjectName).dll  $(ProjectDir)..\..\lib\$(ProjectName).dll
+if Exist $(ProjectDir)bin\Release\$(ProjectName).pdb copy /V $(ProjectDir)bin\Release\$(ProjectName).pdb  $(ProjectDir)..\..\lib\$(ProjectName).pdb</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
