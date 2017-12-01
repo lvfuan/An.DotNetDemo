@@ -1,0 +1,9 @@
+F:\TestDemo\DLL\bin\Debug\DLL.dll.config
+F:\TestDemo\DLL\bin\Debug\DLL.dll
+F:\TestDemo\DLL\bin\Debug\DLL.pdb
+F:\TestDemo\DLL\bin\Debug\EntityFramework.dll
+F:\TestDemo\DLL\bin\Debug\EntityFramework.SqlServer.dll
+F:\TestDemo\DLL\bin\Debug\EntityFramework.xml
+F:\TestDemo\DLL\bin\Debug\EntityFramework.SqlServer.xml
+F:\TestDemo\DLL\obj\Debug\DLL.dll
+F:\TestDemo\DLL\obj\Debug\DLL.pdb

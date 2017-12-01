@@ -1,0 +1,12 @@
+F:\TestDemo\BLL\bin\Debug\BLL.dll.config
+F:\TestDemo\BLL\bin\Debug\BLL.dll
+F:\TestDemo\BLL\bin\Debug\BLL.pdb
+F:\TestDemo\BLL\bin\Debug\DLL.dll
+F:\TestDemo\BLL\bin\Debug\EntityFramework.dll
+F:\TestDemo\BLL\bin\Debug\EntityFramework.SqlServer.dll
+F:\TestDemo\BLL\bin\Debug\DLL.pdb
+F:\TestDemo\BLL\bin\Debug\EntityFramework.xml
+F:\TestDemo\BLL\bin\Debug\EntityFramework.SqlServer.xml
+F:\TestDemo\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+F:\TestDemo\BLL\obj\Debug\BLL.dll
+F:\TestDemo\BLL\obj\Debug\BLL.pdb
